@@ -1,9 +1,137 @@
 /* ===== YOUR CSS GOES HERE ===== */
 /* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
 
-body {
-    background: magenta;
+@import url('https://fonts.cdnfonts.com/css/futura-medium');
+@import url('https://fonts.cdnfonts.com/css/doctor-glitch');                           
+html {
+  box-sizing: border-box;
+  background-color: #231F20;
+  font-size: 16px;
+  padding: 0;
 }
-p {
-    font-size: 2em;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Futura-Medium', sans-serif;
+  line-height: 1.5;
+  color: #231F20;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  max-width: 700px;
+  font-family: 'Futura-Medium', sans-serif;       
+  line-height: 1.5;
+  color: #231F20;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Doctor Glitch', sans-serif;        
+  margin: 0;
+}
+
+.logo {
+  color: #D8BD77;
+  font-size: 1.8em;
+  padding-left: 1em;
+}
+
+nav {
+  background: #898B8E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Doctor Glitch', sans-serif;
+  padding: 10px;
+}
+
+nav .navOptions {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  padding-right: 1em;
+}
+
+nav .navOptions li a {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  text-decoration: none;
+  color: #231F20;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav .navOptions li a:hover {
+  color: #D8BD77;
+  border: 2px solid #D8BD77;
+  border-radius: 6px;
+}
+
+#description {
+  color: #D8BD77;
+  padding-top: 3em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+#description h2 {
+  font-size: 4.5em;
+}
+
+section:first-of-type {
+  background-color: #F7F7F7;
+  padding: 3em;
+  height: 530px;
+  width: 450px;
+  border-radius: 10px;
+}
+
+section h3 {
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+
+section ol li {
+  padding: 0.5em;
+}
+
+button {
+  background-color: #898B8E;
+  font-family: 'Doctor Glitch', sans-serif;
+  font-size: 1.5em;
+  margin: 2em;
+  padding: 1em;
+  border-radius: 6px;
+  width: 225px;
+}
+
+button:hover {
+  color: #D8BD77;
+}
+
+.icon-size {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
 }
