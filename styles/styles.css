@@ -132,6 +132,29 @@ button:hover {
 .icon-size {
   height: 40px;
   width: 40px;
-  margin-right: 10px;
+  margin-right: 30px;
   vertical-align: middle;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color:#F7F7F7;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex-container h3 {
+  color:#231F20;
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+
+input[type="radio"] + label {
+  display: flex;
+
+}
+
+input[type="checkbox"] + label {
+  display: flex;
 }
