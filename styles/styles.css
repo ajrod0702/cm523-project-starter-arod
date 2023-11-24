@@ -5,7 +5,7 @@
 @import url('https://fonts.cdnfonts.com/css/doctor-glitch');                           
 html {
   box-sizing: border-box;
-  background-color: #231F20;
+  background-color: #231F20; 
   font-size: 16px;
   padding: 0;
 }
@@ -138,23 +138,33 @@ button:hover {
 
 .flex-container {
   display: flex;
-  flex-direction: column;
-  background-color:#F7F7F7;
-  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  padding: 3em;
+  border-radius: 10px;
+  align-items: center; 
+  justify-content: space-around; 
+}
+
+.filter { 
+  background-color: #F7F7F7;
+  padding: 3em;
+  height: 370px;
+  width: 300px;
+  border-radius: 10px;
+  /* align-items: center; */
   justify-content: space-around;
 }
 
-.flex-container h3 {
+.filter h3 {
   color:#231F20;
   padding-bottom: 0.5em;
   text-align: center;
+  font-size: 1.5em;
 }
 
-input[type="radio"] + label {
+label {
   display: flex;
-
-}
-
-input[type="checkbox"] + label {
-  display: flex;
+  justify-content: left;
+  accent-color: #D8BD77;
 }
