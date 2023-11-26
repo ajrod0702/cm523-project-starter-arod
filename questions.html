@@ -18,138 +18,143 @@
   <script src="scripts/scripts.js" defer></script>
 </head>
 
-<body>
-  <!-- YOUR HTML GOES HERE -->
-  <header>
-    <nav>
-      <div class="logo">
-        <h1>Q4U</h1>
-      </div>
-      <ul class="navOptions">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="starred.html">Starred</a></li>
-      </ul>
-    </nav>
-  </header>
+<div id="content">
 
-  <main>
-    <div id="description">
-      <h1>Questions</h1>
-    </div>
+  <body>
+    <!-- YOUR HTML GOES HERE -->
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>Q4U</h1>
+        </div>
+        <ul class="navOptions">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="starred.html">Starred</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="flex-container">
-      <div class="filter">
-        <h3>Runtime in Minutes</h3>
-        <label>
-          <input type="radio" id="under_30" name="runtime" value="0">Under 30
-        </label>
-        <label>
-          <input type="radio" id="3060" name="runtime" value="30">30-60
-        </label>
-        <label>
-          <input type="radio" id="60-90" name="runtime" value="60">60-90
-        </label>
-        <label>
-          <input type="radio" id="over_90" name="runtime" value="90">Over 90
-        </label>
+    <main>
+      <div id="description">
+        <h1>Questions</h1>
       </div>
 
-      <div class="filter">
-        <h3>Genres</h3>
-        <label>
-          <input type="checkbox" id="action_adventure" name="genre" value="10759">Action & Adventure
-        </label>
-        <label>
-          <input type="checkbox" id="animation" name="genre" value="16">Animation
-        </label>
-        <label>
-          <input type="checkbox" id="comedy" name="genre" value="35">Comedy
-        </label>
-        <label>
-          <input type="checkbox" id="crime" name="genre" value="80">Crime
-        </label>
-        <label>
-          <input type="checkbox" id="drama" name="genre" value="18">Drama
-        </label>
-        <label>
-          <input type="checkbox" id="family" name="genre" value="10751">Family
-        </label>
-        <label>
-          <input type="checkbox" id="mystery" name="genre" value="9648">Mystery
-        </label>
-        <label>
-          <input type="checkbox" id="reality" name="genre" value="10764">Reality
-        </label>
-        <label>
-          <input type="checkbox" id="sci-fi" name="genre" value="10765">Sci-Fi & Fantasy
-        </label>
+      <div class="flex-container">
+        <div class="filter">
+          <h3>Runtime in Minutes</h3>
+          <label>
+            <input type="radio" id="under_30" name="runtime" value="0">Under 30
+          </label>
+          <label>
+            <input type="radio" id="3060" name="runtime" value="30">30-60
+          </label>
+          <label>
+            <input type="radio" id="60-90" name="runtime" value="60">60-90
+          </label>
+          <label>
+            <input type="radio" id="over_90" name="runtime" value="90">Over 90
+          </label>
+        </div>
+
+        <div class="filter">
+          <h3>Genres</h3>
+          <label>
+            <input type="checkbox" id="action_adventure" name="genre" value="10759">Action & Adventure
+          </label>
+          <label>
+            <input type="checkbox" id="animation" name="genre" value="16">Animation
+          </label>
+          <label>
+            <input type="checkbox" id="comedy" name="genre" value="35">Comedy
+          </label>
+          <label>
+            <input type="checkbox" id="crime" name="genre" value="80">Crime
+          </label>
+          <label>
+            <input type="checkbox" id="drama" name="genre" value="18">Drama
+          </label>
+          <label>
+            <input type="checkbox" id="family" name="genre" value="10751">Family
+          </label>
+          <label>
+            <input type="checkbox" id="mystery" name="genre" value="9648">Mystery
+          </label>
+          <label>
+            <input type="checkbox" id="reality" name="genre" value="10764">Reality
+          </label>
+          <label>
+            <input type="checkbox" id="sci-fi" name="genre" value="10765">Sci-Fi & Fantasy
+          </label>
+        </div>
+
+        <div class="filter">
+          <h3>Decade</h3>
+          <label>
+            <input type="radio" id="1960" name="decade" value="1960">1960s
+          </label>
+          <label>
+            <input type="radio" id="1970" name="decade" value="1970">1970s
+          </label>
+          <label>
+            <input type="radio" id="1980" name="decade" value="1980">1980s
+          </label>
+          <label>
+            <input type="radio" id="1990" name="decade" value="1990">1990s
+          </label>
+          <label>
+            <input type="radio" id="2000" name="decade" value="2000">2000s
+          </label>
+          <label>
+            <input type="radio" id="2010" name="decade" value="2010">2010s
+          </label>
+          <label>
+            <input type="radio" id="2020" name="decade" value="2020">2020s
+          </label>
+        </div>
+
+        <div class="filter">
+          <h3>Streaming Services</h3>
+          <label>
+            <input type="checkbox" id="netflix" name="service" value="8">Netflix
+          </label>
+          <label>
+            <input type="checkbox" id="hulu" name="service" value="15">Hulu
+          </label>
+          <label>
+            <input type="checkbox" id="amazon_prime_video" name="service" value="9">Amazon Prime Video
+          </label>
+          <label>
+            <input type="checkbox" id="disney_plus" name="service" value="337">Disney Plus
+          </label>
+          <label>
+            <input type="checkbox" id="apple_tv_plus" name="service" value="350">Apple TV Plus
+          </label>
+          <label>
+            <input type="checkbox" id="max" name="service" value="1899">Max
+          </label>
+          <label>
+            <input type="checkbox" id="peacock_premium" name="service" value="387">Peacock Premium
+          </label>
+          <label>
+            <input type="checkbox" id="paramount_plus" name="service" value="531">Paramount Plus
+          </label>
+          <label>
+            <input type="checkbox" id="youtube" name="service" value="192">YouTube
+          </label>
+        </div>
       </div>
 
-      <div class="filter">
-        <h3>Decade</h3>
-        <label>
-          <input type="radio" id="1960" name="decade" value="1960">1960s
-        </label>
-        <label>
-          <input type="radio" id="1970" name="decade" value="1970">1970s
-        </label>
-        <label>
-          <input type="radio" id="1980" name="decade" value="1980">1980s
-        </label>
-        <label>
-          <input type="radio" id="1990" name="decade" value="1990">1990s
-        </label>
-        <label>
-          <input type="radio" id="2000" name="decade" value="2000">2000s
-        </label>
-        <label>
-          <input type="radio" id="2010" name="decade" value="2010">2010s
-        </label>
-        <label>
-          <input type="radio" id="2020" name="decade" value="2020">2020s
-        </label>
-      </div>
+      <span>
+        <a href="index.html"><button><img class="icon-size" src="images/rewind-button.png"
+              alt="Rewind Button">Back</button></a>
+        <a><button id="showBtn"><img class="icon-size" src="images/magnifying-glass.png" alt="Search Icon Button">Find
+            Shows</button></a>
+      </span>
 
-      <div class="filter">
-        <h3>Streaming Services</h3>
-        <label>
-          <input type="checkbox" id="netflix" name="service" value="8">Netflix
-        </label>
-        <label>
-          <input type="checkbox" id="hulu" name="service" value="15">Hulu
-        </label>
-        <label>
-          <input type="checkbox" id="amazon_prime_video" name="service" value="9">Amazon Prime Video
-        </label>
-        <label>
-          <input type="checkbox" id="disney_plus" name="service" value="337">Disney Plus
-        </label>
-        <label>
-          <input type="checkbox" id="apple_tv_plus" name="service" value="350">Apple TV Plus
-        </label>
-        <label>
-          <input type="checkbox" id="max" name="service" value="1899">Max
-        </label>
-        <label>
-          <input type="checkbox" id="peacock_premium" name="service" value="387">Peacock Premium
-        </label>
-        <label>
-          <input type="checkbox" id="paramount_plus" name="service" value="531">Paramount Plus
-        </label>
-        <label>
-          <input type="checkbox" id="youtube" name="service" value="192">YouTube
-        </label>
-      </div>
-    </div>
-
-    <span> 
-      <a href="index.html"><button><img class="icon-size" src="images/rewind-button.png" alt="Rewind Button">Back</button></a>
-      <a><button id="showBtn"><img class="icon-size" src="images/magnifying-glass.png" alt="Search Icon Button">Find Shows</button></a>
-    </span>
-
-    <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
-  </main>
-</body>
+      <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
+    </main>
+  </body>
+</div>
 
 </html>

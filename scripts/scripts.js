@@ -1,5 +1,6 @@
 /* WRITE YOUR JS HERE... YOU MAY REQUIRE MORE THAN ONE JS FILE. IF SO SAVE IT SEPARATELY IN THE SCRIPTS DIRECTORY */
 
+
 const showButton = document.getElementById('showBtn');
 showButton.addEventListener('click', getInfo);
 
@@ -62,5 +63,6 @@ function getInfo() {
     .then(response => response.json())
     .then(response => response.results)
     .then(response => console.log(response))
+    .then(localStorage.setItem("response", response))
     .catch(err => console.error(err));
 }

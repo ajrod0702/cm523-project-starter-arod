@@ -31,8 +31,19 @@
 
       <main>
         <div id="description">
-          <h1>TV Shows</h1>
+          <h1>Shows</h1>
         </div>
+
+        <div class="about-flex-container">
+            <div class="about-cards">
+              <h3>Documents</h3>
+                <p id="name" ></p>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById("name").innerHTML = localStorage.getItem("response");
+        </script>
 
     <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
       </main>

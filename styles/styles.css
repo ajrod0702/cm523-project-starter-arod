@@ -168,3 +168,55 @@ label {
   justify-content: left;
   accent-color: #D8BD77;
 }
+
+.about-flex-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 3em;
+  border-radius: 10px;
+  align-items: center; 
+  justify-content: space-around; 
+}
+
+.about-cards { 
+  background-color: #F7F7F7;
+  padding: 3em;
+  height: 370px;
+  width: 300px;
+  border-radius: 10px;
+  /* align-items: center; */
+  justify-content: space-around;
+}
+
+.about-cards h3 {
+  color:#231F20;
+  padding-bottom: 0.5em;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.about-cards ul li {
+  display: flex;
+  justify-content: left;
+  list-style: none;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+.about-cards ul li a {
+  display: flex;
+  justify-content: left;
+  text-decoration: underline;
+  color:#231F20;
+}
+
+.about-cards ul li a:hover {
+  color:#D8BD77;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
