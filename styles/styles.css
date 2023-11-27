@@ -98,7 +98,7 @@ nav .navOptions li a:hover {
   font-size: 4.5em;
 }
 
-section:first-of-type {
+section {
   background-color: #F7F7F7;
   padding: 3em;
   height: 530px;
@@ -115,7 +115,7 @@ section ol li {
   padding: 0.5em;
 }
 
-button {
+.buttons-majority button {
   background-color: #898B8E;
   font-family: 'Doctor Glitch', sans-serif;
   font-size: 1.5em;
@@ -125,7 +125,7 @@ button {
   width: 225px;
 }
 
-button:hover {
+.buttons-majority button:hover {
   color: #D8BD77;
 }
 
@@ -219,4 +219,55 @@ img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+
+.show-section {
+  background-color: #F7F7F7;
+  padding: 3em;
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.show-section h2 {
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+
+.show-section img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  float: left;
+  margin-right: 2em;
+}
+
+.show-details {
+  flex-direction: row;
+}
+
+.show-details p {
+  margin: 0;
+}
+
+.circle-buttons button {
+  background-color:#D8BD77;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+#dislike:hover {
+  background-color: #FF6962;
+}
+
+#dash:hover {
+  background-color: #FFFFB1;
+}
+
+#likeBtn:hover {
+  background-color: #C1E1C1;
 }

@@ -1,5 +1,6 @@
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,37 +16,64 @@
     <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
     <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
     <script src="scripts/scripts.js" defer></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- YOUR HTML GOES HERE -->
     <header>
         <nav>
-        <div class="logo"><h1>Q4U</h1></div>
-        <ul class="navOptions">  
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="starred.html">Starred</a></li>
-        </ul>
+            <div class="logo">
+                <h1>Q4U</h1>
+            </div>
+            <ul class="navOptions">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="starred.html">Starred</a></li>
+            </ul>
         </nav>
-      </header>
+    </header>
 
-      <main>
+    <main>
         <div id="description">
-          <h1>Shows</h1>
+            <h1>Shows</h1>
         </div>
 
-        <div class="about-flex-container">
-            <div class="about-cards">
-              <h3>Documents</h3>
-                <p id="name" ></p>
+        <div class="show-section">
+            <h2 id="name"></h2>
+            <!-- <div class="show-content"> -->
+            <img id="show-pic"></img>
+            <!-- </div> -->
+            <div class="show-details">
+                <p id="show-rating"></p>
+                <br>
+                <p id="show-description"></p>
+                <br>
+                <p id="show-genres"></p>
+                <br>
             </div>
         </div>
 
-        <script>
-            document.getElementById("name").innerHTML = localStorage.getItem("response");
-        </script>
+        <span>
+            <div class="circle-buttons">
+            <button id="dislike"><img class="icon-size" src="images/dislike.png" alt="Dislike Button"></button>
+            <button id="dash"><img class="icon-size" src="images/delete.png" alt="Already Watched Button"></button>
+            <button id="likeBtn"><img class="icon-size" src="images/like.png" alt="Like Button"></button>
+            </div>
+        </span>
 
-    <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
-      </main>
-  </body>
+        <span>
+          <div class="buttons-majority">
+            <a href="questions.html"><button><img class="icon-size" src="images/rewind-button.png"
+                        alt="Rewind Button">Back</button></a>
+            <a href="list.html"><button id="listBtn"><img class="icon-size" src="images/fast-forward.png"
+                    alt="Fast Forward Button">Get List</button></a>
+          </div>
+        </span>
+        <!-- <p id="name" ></p> -->
+
+
+        <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
+    </main>
+</body>
+
 </html>
