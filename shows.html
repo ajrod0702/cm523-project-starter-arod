@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
     <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
-    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/shows.js" defer></script>
 </head>
 
 <body>
@@ -26,10 +26,21 @@
                 <h1>Q4U</h1>
             </div>
             <ul class="navOptions">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="starred.html">Starred</a></li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="starred.html" class="nav-link">Starred</a>
+                </li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
 
@@ -41,7 +52,7 @@
         <div class="show-section">
             <h2 id="name"></h2>
             <!-- <div class="show-content"> -->
-            <img id="show-pic"></img>
+            <div class="left-half"><img id="show-pic"></img></div>
             <!-- </div> -->
             <div class="show-details">
                 <p id="show-rating"></p>
@@ -50,24 +61,26 @@
                 <br>
                 <p id="show-genres"></p>
                 <br>
+                <p id="show-service"></p>
             </div>
         </div>
 
         <span>
             <div class="circle-buttons">
-            <button id="dislike"><img class="icon-size" src="images/dislike.png" alt="Dislike Button"></button>
-            <button id="dash"><img class="icon-size" src="images/delete.png" alt="Already Watched Button"></button>
-            <button id="likeBtn"><img class="icon-size" src="images/like.png" alt="Like Button"></button>
+                <button id="dislikeBtn"><img class="icon-size" src="images/dislike.png" alt="Dislike Button"></button>
+                <button id="dashBtn"><img class="icon-size" src="images/delete.png"
+                        alt="Already Watched Button"></button>
+                <button id="likeBtn"><img class="icon-size" src="images/like.png" alt="Like Button"></button>
             </div>
         </span>
 
         <span>
-          <div class="buttons-majority">
-            <a href="questions.html"><button><img class="icon-size" src="images/rewind-button.png"
-                        alt="Rewind Button">Back</button></a>
-            <a href="list.html"><button id="listBtn"><img class="icon-size" src="images/fast-forward.png"
-                    alt="Fast Forward Button">Get List</button></a>
-          </div>
+            <div class="buttons-majority">
+                <a href="preferences.html"><button><img class="icon-size" src="images/rewind-button.png"
+                            alt="Rewind Button">Back</button></a>
+                <a><button id="listBtn"><img class="icon-size" src="images/fast-forward.png"
+                            alt="Fast Forward Button">List</button></a>
+            </div>
         </span>
         <!-- <p id="name" ></p> -->
 

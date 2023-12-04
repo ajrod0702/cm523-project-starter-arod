@@ -25,20 +25,29 @@
     <div id="content">
       <header>
         <nav>
-          <div class="logo">
-            <h1>Q4U</h1>
+        <div class="logo"><h1>Q4U</h1></div>
+        <ul class="navOptions">  
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+                    <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+                    <li class="nav-item">
+            <a href="starred.html" class="nav-link">Starred</a>
+          </li>
+        </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
           </div>
-          <ul class="navOptions">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="starred.html">Starred</a></li>
-          </ul>
         </nav>
       </header>
 
-      <main>
+      <main id="main">
         <div id="description">
-          <h1>Questions</h1>
+          <h1>Preferences</h1>
         </div>
 
         <div class="flex-container">
@@ -117,46 +126,44 @@
           <div class="filter">
             <h3>Streaming Services</h3>
             <label>
-              <input type="checkbox" id="netflix" name="service" value="8">Netflix
+              <input type="radio" id="netflix" name="service" value="8">Netflix
             </label>
             <label>
-              <input type="checkbox" id="hulu" name="service" value="15">Hulu
+              <input type="radio" id="hulu" name="service" value="15">Hulu
             </label>
             <label>
-              <input type="checkbox" id="amazon_prime_video" name="service" value="9">Amazon Prime Video
+              <input type="radio" id="amazon_prime_video" name="service" value="9">Amazon Prime Video
             </label>
             <label>
-              <input type="checkbox" id="disney_plus" name="service" value="337">Disney Plus
+              <input type="radio" id="disney_plus" name="service" value="337">Disney Plus
             </label>
             <label>
-              <input type="checkbox" id="apple_tv_plus" name="service" value="350">Apple TV Plus
+              <input type="radio" id="apple_tv_plus" name="service" value="350">Apple TV Plus
             </label>
             <label>
-              <input type="checkbox" id="max" name="service" value="1899">Max
+              <input type="radio" id="max" name="service" value="1899">Max
             </label>
             <label>
-              <input type="checkbox" id="peacock_premium" name="service" value="387">Peacock Premium
+              <input type="radio" id="peacock_premium" name="service" value="387">Peacock Premium
             </label>
             <label>
-              <input type="checkbox" id="paramount_plus" name="service" value="531">Paramount Plus
+              <input type="radio" id="paramount_plus" name="service" value="531">Paramount Plus
             </label>
             <label>
-              <input type="checkbox" id="youtube" name="service" value="192">YouTube
+              <input type="radio" id="youtube" name="service" value="192">YouTube
             </label>
           </div>
-        </div>
 
-        <span>
           <div class="buttons-majority">
             <a href="index.html"><button><img class="icon-size" src="images/rewind-button.png"
                 alt="Rewind Button">Back</button></a>
-            <a><button id="showBtn"><img class="icon-size" src="images/magnifying-glass.png" alt="Search Icon Button">Find
-            Shows</button></a>
-        </span>
+            <a><button id="showBtn"><img class="icon-size" src="images/fast-forward.png" alt="Fast Forward Button">Shows</button></a>
+        </div>
+
 
         <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
       </main>
-    </body>
-</div>
+    </div>
+  </body>
 
 </html>

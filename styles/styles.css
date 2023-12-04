@@ -2,13 +2,15 @@
 /* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
 
 @import url('https://fonts.cdnfonts.com/css/futura-medium');
-@import url('https://fonts.cdnfonts.com/css/doctor-glitch');                           
+@import url('https://fonts.cdnfonts.com/css/doctor-glitch');
+
 html {
   box-sizing: border-box;
-  background-color: #231F20; 
+  background-color: #231F20;
   font-size: 16px;
   padding: 0;
 }
+
 *,
 *::before,
 *::after {
@@ -25,7 +27,7 @@ body {
 
 main {
   max-width: 700px;
-  font-family: 'Futura-Medium', sans-serif;       
+  font-family: 'Futura-Medium', sans-serif;
   line-height: 1.5;
   color: #231F20;
   margin-left: auto;
@@ -42,7 +44,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Doctor Glitch', sans-serif;        
+  font-family: 'Doctor Glitch', sans-serif;
   margin: 0;
 }
 
@@ -115,14 +117,37 @@ section ol li {
   padding: 0.5em;
 }
 
+#user-list {
+  background-color: #D8BD77;
+  border: #F7F7F7 solid 1em;
+  margin-top: 6em;
+  padding: 3em;
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+}
+
+#user-list h3 {
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+
+#user-list p {
+  padding: 0.5em;
+  text-align: center;
+}
+
 .buttons-majority button {
   background-color: #898B8E;
   font-family: 'Doctor Glitch', sans-serif;
   font-size: 1.5em;
-  margin: 2em;
   padding: 1em;
   border-radius: 6px;
   width: 225px;
+  margin-bottom: 3em;
+  margin-top: 2em;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .buttons-majority button:hover {
@@ -139,25 +164,22 @@ section ol li {
 .flex-container {
   display: flex;
   flex-direction: row;
-  gap: 10px;
-  padding: 3em;
-  border-radius: 10px;
-  align-items: center; 
-  justify-content: space-around; 
+  flex-wrap: wrap;
+  gap: 30px;
+  height: 100vh;
+  justify-content: center;
 }
 
-.filter { 
+.filter {
   background-color: #F7F7F7;
   padding: 3em;
   height: 370px;
   width: 300px;
   border-radius: 10px;
-  /* align-items: center; */
-  justify-content: space-around;
 }
 
 .filter h3 {
-  color:#231F20;
+  color: #231F20;
   padding-bottom: 0.5em;
   text-align: center;
   font-size: 1.5em;
@@ -172,35 +194,33 @@ label {
 .about-flex-container {
   display: flex;
   flex-direction: row;
-  gap: 10px;
-  padding: 3em;
-  border-radius: 10px;
-  align-items: center; 
-  justify-content: space-around; 
+  flex-wrap: wrap;
+  gap: 30px;
+  height: 100vh;
+  justify-content: center;
 }
 
-.about-cards { 
+.about-cards {
   background-color: #F7F7F7;
-  padding: 3em;
-  height: 370px;
-  width: 300px;
+  padding: 2em;
+  height: 510px;
+  width: 320px;
   border-radius: 10px;
-  /* align-items: center; */
-  justify-content: space-around;
 }
 
 .about-cards h3 {
-  color:#231F20;
+  color: #231F20;
   padding-bottom: 0.5em;
   text-align: center;
   font-size: 1.5em;
+  margin-top: 0.5em;
 }
 
 .about-cards ul li {
   display: flex;
   justify-content: left;
   list-style: none;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   text-decoration: underline;
 }
 
@@ -208,11 +228,11 @@ label {
   display: flex;
   justify-content: left;
   text-decoration: underline;
-  color:#231F20;
+  color: #231F20;
 }
 
 .about-cards ul li a:hover {
-  color:#D8BD77;
+  color: #D8BD77;
 }
 
 img {
@@ -236,7 +256,7 @@ img {
 }
 
 .show-section img {
-  width: 50%;
+  width: 85%;
   height: auto;
   border-radius: 10px;
   float: left;
@@ -245,14 +265,107 @@ img {
 
 .show-details {
   flex-direction: row;
+  float: left;
+  width: 50%;
 }
 
 .show-details p {
   margin: 0;
 }
 
+.left-half {
+  float: left;
+  width: 50%;
+}
+
+.starred-flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  height: 100vh;
+  justify-content: center;
+}
+
+.starred-cards {
+  background-color: #F7F7F7;
+  height: 375px;
+  width: 260px;
+  border-radius: 10px;
+}
+
+.starred-cards img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.starred-button button {
+  background-color: #898B8E;
+  font-family: 'Doctor Glitch', sans-serif;
+  font-size: 1.1em;
+  padding: 1em;
+  border-radius: 6px;
+  width: 160px;
+  margin-left: 50px;
+}
+
+.starred-button button:hover {
+  color: #D8BD77
+}
+
+[class^="bg-modal"] {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal-content {
+  max-width: 700px;
+  width: auto;
+  height: auto;
+  background-color: #D8BD77;
+  border-radius: 10px;
+  position: relative;
+  padding: 3em;
+}
+
+.modal-content h2 {
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+
+[class^="close"] {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 42px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.download-button button {
+  background-color: #898B8E;
+  font-family: 'Doctor Glitch', sans-serif;
+  font-size: 1em;
+  padding: 1em;
+  border-radius: 6px;
+  width: 225px;
+  margin-top: 40px;
+}
+
+.download-button button:hover {
+  color: #D8BD77;
+}
+
 .circle-buttons button {
-  background-color:#D8BD77;
+  background-color: #D8BD77;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -260,14 +373,92 @@ img {
   margin-left: 40px;
 }
 
-#dislike:hover {
+#dislikeBtn:hover {
   background-color: #FF6962;
 }
 
-#dash:hover {
+#dashBtn:hover {
   background-color: #FFFFB1;
 }
 
 #likeBtn:hover {
   background-color: #C1E1C1;
+}
+
+.hidden {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #231F20;
+}
+
+@media(max-width:600px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navOptions {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #898B8E;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .navOptions.active {
+    left: 0;
+  }
+
+  .circle-buttons button {
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .buttons-majority button {
+    width: 160px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 1em;
+  }
+
+  .download-button button {
+    width: 180px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 0.8em;
+  }
 }

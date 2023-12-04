@@ -1,40 +1,393 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- PUT A TITLE IN HERE -->
-    <title>Queue for You</title>
-    <!-- PUT A DESCRIPTION IN HERE -->
-    <meta name="description" content="describe content of the page here...." />
-    <!-- LINK TO NORMALIZE (FOR CONSISTENCY) -->
-    <link rel="stylesheet" href="styles.normalize.css" />
-    <!-- LINK TO ANY FRAMEWORK STYLES HERE-->
-    <!-- LINK TO YOUR STYLES -->
-    <link rel="stylesheet" href="styles/styles.css" />
-    <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
-    <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
-    <script src="scripts/scripts.js" defer></script>
-  </head>
-  <body>
-    <!-- YOUR HTML GOES HERE -->
-    <header>
-        <nav>
-        <div class="logo"><h1>Q4U</h1></div>
-        <ul class="navOptions">  
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="starred.html">Starred</a></li>
-        </ul>
-        </nav>
-      </header>
 
-      <main>
-        <div id="description">
-          <h1>Starred</h1>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- PUT A TITLE IN HERE -->
+  <title>Queue for You</title>
+  <!-- PUT A DESCRIPTION IN HERE -->
+  <meta name="description" content="describe content of the page here...." />
+  <!-- LINK TO NORMALIZE (FOR CONSISTENCY) -->
+  <link rel="stylesheet" href="styles.normalize.css" />
+  <!-- LINK TO ANY FRAMEWORK STYLES HERE-->
+  <!-- LINK TO YOUR STYLES -->
+  <link rel="stylesheet" href="styles/styles.css" />
+  <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
+  <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
+  <script src="scripts/favorites.js" defer></script>
+</head>
 
-    <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
-      </main>
-  </body>
+<body>
+  <!-- YOUR HTML GOES HERE -->
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>Q4U</h1>
+      </div>
+      <ul class="navOptions">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="starred.html" class="nav-link">Starred</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <div id="description">
+    <h1>Alexis' Favorites</h1>
+  </div>
+
+  <div class="starred-flex-container">
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/db5XnOxGcUHeNhBRNbHfqTlzXmk.jpg"
+          alt="Picture of Switched at Birth TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/9PFonBhy4cQy7Jz20NpMygczOkv.jpg"
+          alt="Picture of Wednesday TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails2">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/h8pYmBwj76Pi2vt8HFnzdlsjEsA.jpg"
+          alt="Picture of The Fosters TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails3">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/daSFbrt8QCXV2hSwB0hqYjbj681.jpg"
+          alt="Picture of Grey's Anatomy TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails4">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/zn6VNUOHGWKvSGRL6KiMtAe9ELy.jpg"
+          alt="Picture of Sex Education TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails5">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/qaGYIoe3CQkTqWI1SWzFZhSPHsb.jpg"
+          alt="Picture of The Sex Lives of College Girls TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails6">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/jFUZebOjrjZfvg7ZSrc19GvTRTg.jpg"
+          alt="Picture of Shrinking TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails7">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/2koX1xLkpTQM4IZebYvKysFW1Nh.jpg" alt="Picture of Friends TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails8">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/9KjKLJrrUI1sU9bNsQaQ5H8kTyY.jpg"
+          alt="Picture of Parenthood TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails9">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/Li7uDf1jUEOP4HJaKHX3iXxlad.jpg"
+          alt="Picture of A Million Little Things TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails10">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/49WJfeN0moxb9IPfGn8AIqMGskD.jpg"
+          alt="Picture of Stranger Things TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails11">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/8hWwBpB1mLUKqzjdGrcvJcIklp4.jpg"
+          alt="Picture of Gilmore Girls TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails12">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/iRfSzrPS5VYWQv7KVSEg2BZZL6C.jpg"
+          alt="Picture of Schitt's Creek TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails13">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/sOrelBaAhp7DZbPTivDwKEyPslC.jpg"
+          alt="Picture of One Tree Hill TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails14">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/wcaDIAG1QdXQLRaj4vC1EFdBT2.jpg" alt="Picture of The 100 TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails15">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/7EQQMl0mp8L0hMxAUZNfoCh1Tkb.jpg"
+          alt="Picture of Little Fires Everywhere TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails16">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/prGylxnFpIWMcvHh9sUC46hmiIC.jpg"
+          alt="Picture of Ugly Betty TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails17">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/aBkVgChtyyJaHyZh1gfd8DbzQon.jpg"
+          alt="Picture of The Vampire Diaries TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails18">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/2llbXc2BOkLkBGgcNJCRbrWedUO.jpg"
+          alt="Picture of The Originals TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails19">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/k2mLNjLFrmMXdXq4d5pn8qRd3bU.jpg"
+          alt="Picture of Survivor TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails20">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/iZ10Q7bEBP5bYD8DpKIbsRxdpeC.jpg"
+          alt="Picture of Atypical TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails21">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/mAj18PHeACxqcrEus4pD8pksRmB.jpg"
+          alt="Picture of Dead to Me TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails22">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/2Jc4L48qEwN9HyzqsdaSX1BCGMJ.jpg"
+          alt="Picture of Victorious TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails23">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/kP8Z51s9D8tiGnoRbL88db0e2jv.jpg" alt="Picture of iCarly TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails24">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/3i868C1EKld0VMtKdptjkXy7GyH.jpg"
+          alt="Picture of Full House TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails25">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/feWw6i09zaX2apzRqd7QbKEAsx9.jpg" alt="Picture of Younger TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails26">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/luhKkdD80qe62fwop6sdrXK9jUT.jpg"
+          alt="Picture of The Good Doctor TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails27">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/mxOlnFEQMpxjIltr9Ox06iyjjvK.jpg"
+          alt="Picture of The Society TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails28">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/hd5fnBixab6IzfUwjC5wfdbX3eM.jpg"
+          alt="Picture of Never Have I Ever TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails29">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/A7ziP4QaTRAwWqGhHyknN5UULlf.jpg"
+          alt="Picture of The Summer I Turned Pretty TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails30">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/o4Ql7oU2W3U8RyeDoSREDdKvTlq.jpg"
+          alt="Picture of Yellowjackets TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails31">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/zU0htwkhNvBQdVSIKB9s6hgVeFK.jpg"
+          alt="Picture of The Queen's Gambit TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails32">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/oTfAheayTCWoselYuty8D6Lem2t.jpg"
+          alt="Picture of The Morning Show TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails33">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/z63D1Y8udrrFOhLFCT9YElcTr0w.jpg"
+          alt="Picture of Bad Sisters TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails34">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/j1yqOSVVskSYpYreNT0VeD1S3Dq.jpg"
+          alt="Picture of Ginny & Georgia TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails35">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/qIhsuhoIYR5yTnDta0IL4senbeN.jpg"
+          alt="Picture of The Good Place TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails36">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/lcuCED5Ky2uM5VE6wILOwt5FEb0.jpg"
+          alt="Picture of Station 19 TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails37">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/pW20ANAGdrgreYJExduUVaWos6H.jpg"
+          alt="Picture of Private Practice TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails38">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/pnrv8tfOcWxu4CrB8N7xK0jYJsR.jpg" alt="Picture of From TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails39">Details</button></div>
+    </div>
+
+    <div class="starred-cards">
+      <figure>
+        <img src="http://image.tmdb.org/t/p/original/yhx6PnU3L2a6FnEFGOlBKTZ8TSD.jpg"
+          alt="Picture of Only Murders in the Building TV Show.">
+      </figure>
+      <div class="starred-button"><button id="starredCardDetails40">Details</button></div>
+    </div>
+  </div>
+
+  <div class="bg-modal">
+    <div class="modal-content">
+      <div class="close">+</div>
+      <h2>Switched at Birth</h2>
+      <p><b><i>Description:</i></b> The story of two teenage girls who discover they were accidentally switched as
+        newborns in the hospital. Bay Kennish grew up in a wealthy family with two parents and a brother, while Daphne
+        Vasquez, who lost her hearing at an early age due to a case of meningitis, grew up with a single mother in a
+        working-class neighborhood. Things come to a dramatic head when both families meet and struggle to learn how
+        to live together for the sake of the girls.</p>
+    </div>
+  </div>
+
+  <div class="bg-modal2">
+    <div class="modal-content">
+      <div class="close2">+</div>
+      <h2>Wednesday</h2>
+      <p><b><i>Description:</i></b> Wednesday Addams is sent to Nevermore Academy, a bizarre boarding school where she
+        attempts to master her psychic powers, stop a monstrous killing spree of the town citizens, and solve the
+        supernatural mystery that affected her family 25 years ago — all while navigating her new relationships.</p>
+    </div>
+  </div>
+
+  <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
+</body>
+
 </html>
