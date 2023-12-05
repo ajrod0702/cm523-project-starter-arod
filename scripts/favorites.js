@@ -26,7 +26,6 @@ document.querySelector('.close').addEventListener("click", function () {
 
 
 
-
 document.getElementById('starredCardDetails2').addEventListener("click", function () {
     document.querySelector('.bg-modal2').style.display = 'flex';
 });
@@ -37,8 +36,6 @@ document.querySelector('.close2').addEventListener("click", function () {
 
 
 
-
-
 document.getElementById('starredCardDetails3').addEventListener("click", function () {
     document.querySelector('.bg-modal3').style.display = 'flex';
 });
@@ -46,8 +43,6 @@ document.getElementById('starredCardDetails3').addEventListener("click", functio
 document.querySelector('.close3').addEventListener("click", function () {
     document.querySelector('.bg-modal3').style.display = 'none';
 });
-
-
 
 
 

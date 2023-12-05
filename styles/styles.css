@@ -364,7 +364,22 @@ img {
   color: #D8BD77;
 }
 
+.restart-button button {
+  background-color: #898B8E;
+  font-family: 'Doctor Glitch', sans-serif;
+  font-size: 1em;
+  padding: 1em;
+  border-radius: 6px;
+  width: 225px;
+  margin-top: 40px;
+}
+
+.restart-button button:hover {
+  color: #D8BD77;
+}
+
 .circle-buttons button {
+  flex-direction: row;
   background-color: #D8BD77;
   border-radius: 50%;
   width: 100px;
@@ -460,5 +475,26 @@ img {
     margin-right: 20px;
     margin-left: 20px;
     font-size: 0.8em;
+  }
+
+  .restart-button button {
+    width: 180px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 0.8em;
+  }
+}
+
+@media(max-width:470px) {
+  section {
+    width: 330px;
+    height: 750px;
+  }
+}
+
+@media(max-width:350px) {
+  section {
+    width: 260px;
+    height: 1080px;
   }
 }

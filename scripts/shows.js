@@ -71,9 +71,7 @@ function advanceCard() {
         if (showDetailsArray.length === cardNumber) {
             alert("Ran out of shows, get your list now!")
         }
-        else {
-            displayTVShowData();
-        }
+        displayTVShowData();
     }
 }
 
@@ -142,11 +140,11 @@ function displayTVShowData() {
     }
 
     document.getElementById('name').innerHTML = show_name;
-    document.getElementById('show-description').innerHTML = 'Description: ' + show_desc;
-    document.getElementById('show-rating').innerHTML = 'Rating: ' + show_rating + '/10';
+    document.getElementById('show-description').innerHTML = '<b><i>Description:</i></b> ' + show_desc;
+    document.getElementById('show-rating').innerHTML = '<b><i>Rating:</i></b> ' + show_rating + '/10';
     document.getElementById('show-pic').src = show_pic_url;
-    document.getElementById('show-genres').innerHTML = 'Genres: ' + show_genres;
-    document.getElementById('show-service').innerHTML = 'Streaming Service: ' + service;
+    document.getElementById('show-genres').innerHTML = '<b><i>Genres:</i></b> ' + show_genres;
+    document.getElementById('show-service').innerHTML = '<b><i>Streaming Service:</i></b> ' + service;
 }
 
 /**
