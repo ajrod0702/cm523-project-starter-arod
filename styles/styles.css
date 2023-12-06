@@ -396,6 +396,29 @@ img {
   margin-left: 40px;
 }
 
+.circle-buttons-labels {
+  display: flex;
+}
+
+.circle-buttons-labels p:first-child {
+  display: flex;
+  color: #FF6962;
+  margin-right: 50px;
+}
+
+.circle-buttons-labels p:nth-child(2) {
+  display: flex;
+  color: #FFFFB1;
+  margin-right: 70px;
+  margin-left: 20px;
+}
+
+.circle-buttons-labels p:last-child {
+  display: flex;
+  color: #C1E1C1;
+  margin-right: 10px;
+}
+
 #dislikeBtn:hover {
   background-color: #FF6962;
 }
@@ -490,6 +513,23 @@ img {
     margin-right: 20px;
     margin-left: 20px;
     font-size: 0.8em;
+  }
+
+  .circle-buttons-labels p {
+    font-size: 0.8em;
+  }
+
+  .circle-buttons-labels p:first-child {
+    margin-right: 20px;
+  }
+
+  .circle-buttons-labels p:nth-child(2) {
+    margin-right: 30px;
+    margin-left: 3px;
+  }
+
+  .circle-buttons-labels p:last-child {
+    margin-right: 1px;
   }
 }
 
