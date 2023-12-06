@@ -100,7 +100,7 @@ nav .navOptions li a:hover {
   font-size: 4.5em;
 }
 
-.save-list {
+#save-list {
   color: #D8BD77;
   padding-top: 3em;
   padding-bottom: 1em;
