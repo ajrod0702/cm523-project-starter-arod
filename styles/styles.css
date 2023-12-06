@@ -100,6 +100,13 @@ nav .navOptions li a:hover {
   font-size: 4.5em;
 }
 
+.save-list {
+  color: #D8BD77;
+  padding-top: 3em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
 section {
   background-color: #F7F7F7;
   padding: 3em;
@@ -120,7 +127,7 @@ section ol li {
 #user-list {
   background-color: #D8BD77;
   border: #F7F7F7 solid 1em;
-  margin-top: 6em;
+  margin-top: 2em;
   padding: 3em;
   height: auto;
   width: auto;
@@ -372,6 +379,7 @@ img {
   border-radius: 6px;
   width: 225px;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .restart-button button:hover {
