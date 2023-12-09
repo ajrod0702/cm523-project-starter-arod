@@ -1,4 +1,13 @@
 /* WRITE YOUR JS HERE... YOU MAY REQUIRE MORE THAN ONE JS FILE. IF SO SAVE IT SEPARATELY IN THE SCRIPTS DIRECTORY */
+const options = {
+    method: 'GET',
+    headers: {
+        accept: 'application/json',
+        Authorization:
+            'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxNGViZmE4ZDMyOGI5NDE4MWM3NDFjMDZlYzRlMzVjMyIsInN1YiI6IjY1MTlmNWM3MDcyMTY2MDBjNTY3MzhlMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Uz_x_wySAAudc6w2U5Wppxt8RFW29XExCwRxxe1zgZk',
+    },
+};
+
 const GENRE_CODES = {
     10759: 'Action & Adventure',
     16: 'Animation',
@@ -27,13 +36,13 @@ const hamburger = document.querySelector(".hamburger");
 const navOptions = document.querySelector(".navOptions");
 
 hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navOptions.classList.toggle("active");
+    hamburger.classList.toggle("active");
+    navOptions.classList.toggle("active");
 })
 
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-  hamburger.classList.remove("active");
-  navOptions.classList.remove("active");
+    hamburger.classList.remove("active");
+    navOptions.classList.remove("active");
 }))
 
 window.onload = setupInitialShowsPage();
@@ -97,6 +106,7 @@ function addRoundButtonListeners() {
     }
 }
 
+
 /**
  * Add user selected shows to a list.
  * user will be able to print or display when desired
@@ -120,11 +130,24 @@ function displayTVShowData() {
     let show_genres = '';
     let service = '';
 
+    const tvId = showDetailsArray[cardNumber]['id'];
     show_name = showDetailsArray[cardNumber]['name'];
     show_desc = showDetailsArray[cardNumber]['overview'];
     show_pic_url =
         'http://image.tmdb.org/t/p/original' + showDetailsArray[cardNumber]['poster_path'];
     show_rating = showDetailsArray[cardNumber]['vote_average'];
+
+    fetch(`https://api.themoviedb.org/3/tv/${tvId}/account_states`, options)
+    .then((response) => response.json())
+    .then((response) => {
+        console.log(show_name + '/' + tvId + '    ' + response.favorite);
+        if (response.favorite) {
+            document.getElementById('star').src = "images/star.png";
+        } else {
+            document.getElementById('star').src = "";
+        }
+    })
+    .catch((err) => console.error(err));
 
     for (let i = 0; i < showDetailsArray[cardNumber]['genre_ids'].length; i++) {
         if (showDetailsArray[cardNumber]['genre_ids'][i] in GENRE_CODES) {
@@ -160,16 +183,6 @@ function getShowDetailsUsingUserInput(page) {
     const selectedDecadeEnd = window.sessionStorage.getItem('filterDecadeEnd');
     const userGenres = window.sessionStorage.getItem('filterGenres');
     const userServices = window.sessionStorage.getItem('filterProviders');
-    
-
-    const options = {
-        method: 'GET',
-        headers: {
-            accept: 'application/json',
-            Authorization:
-                'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxNGViZmE4ZDMyOGI5NDE4MWM3NDFjMDZlYzRlMzVjMyIsInN1YiI6IjY1MTlmNWM3MDcyMTY2MDBjNTY3MzhlMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Uz_x_wySAAudc6w2U5Wppxt8RFW29XExCwRxxe1zgZk',
-        },
-    };
 
     /*
      * response returns an array of shows and the information about them, so we want
@@ -180,8 +193,8 @@ function getShowDetailsUsingUserInput(page) {
         `https://api.themoviedb.org/3/discover/tv?first_air_date.gte=${selectedDecadeStart}&first_air_date.lte=${selectedDecadeEnd}&with_original_language=en&with_runtime.gte=${selectedRuntimeStart}&with_runtime.lte=${selectedRuntimeEnd}&with_genres=${userGenres}&with_watch_providers=${userServices}&page=${page}`,
         options
     )
-        .then((response) => response.json()) 
-        .then((response) => response.results) 
+        .then((response) => response.json())
+        .then((response) => response.results)
         .then((response) => {
             console.log(response);
 

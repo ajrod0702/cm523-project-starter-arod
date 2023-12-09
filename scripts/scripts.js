@@ -20,15 +20,6 @@ if (showButton) {
   showButton.addEventListener('click', getUserFilters);
 }
 
-const favsButton = document.getElementById('favsBtn');
-if (favsButton) {
-  favsButton.addEventListener('click', getFavorites);
-}
-
-function getFavorites() {
-  window.location.href = 'starred.html';
-}
-
 function getUserFilters() {
   const form = document.getElementById('content');
 
@@ -71,7 +62,7 @@ function getUserFilters() {
     window.sessionStorage.setItem('filterDecadeEnd', selectedDecadeEnd);
     window.sessionStorage.setItem('filterGenres', userGenres);
     window.sessionStorage.setItem('filterProviders', selectedService);
-  
+
     window.location.href = 'shows.html';
   } else {
     alert("Make selections before you proceed");
