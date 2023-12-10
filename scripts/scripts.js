@@ -53,8 +53,10 @@ function getUserFilters() {
     /* genres array examples: ["1234", "99"]
     toString returns "1234, 99" but API needs #s separated by | for OR and , for AND
     userGenres format is "1234 | 99" */
-    let userGenres = genres.toString().replace(',', '|');
+    console.log(genres);
+    let userGenres = genres.toString().replaceAll(',', '|');
     selectedService = parseInt(document.querySelector('input[name="service"]:checked').value);
+    console.log(userGenres);
 
     window.sessionStorage.setItem('filterRuntimeStart', selectedRuntimeStart);
     window.sessionStorage.setItem('filterRuntimeEnd', selectedRuntimeEnd);
