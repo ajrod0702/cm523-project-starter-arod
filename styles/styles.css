@@ -390,16 +390,16 @@ img {
   color: #D8BD77;
 }
 
-.star-size1 { 
-  position: relative; 
-  width: 105px; 
-} 
- 
-.star-size2 { 
-  position: absolute; 
-  top: 0px; 
-  right: 0px; 
-} 
+.star-size1 {
+  position: relative;
+  width: 105px;
+}
+
+.star-size2 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
 
 .circle-buttons button {
   flex-direction: row;
@@ -559,5 +559,9 @@ img {
   section {
     width: 260px;
     height: 1080px;
+  }
+
+  #star {
+    width: 85px;
   }
 }
