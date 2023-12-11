@@ -397,8 +397,8 @@ img {
 
 .star-size2 {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: -35px;
+  right: 18px;
 }
 
 .circle-buttons button {
@@ -546,6 +546,12 @@ img {
   .circle-buttons-labels p:last-child {
     margin-right: 1px;
   }
+
+  #star {
+    width: 65px;
+    top: -20px;
+    left: -23px;
+  }
 }
 
 @media(max-width:470px) {
@@ -559,9 +565,5 @@ img {
   section {
     width: 260px;
     height: 1080px;
-  }
-
-  #star {
-    width: 85px;
   }
 }
