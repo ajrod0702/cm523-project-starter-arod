@@ -129,7 +129,8 @@ function displayTVShowData() {
     let show_rating = '';
     let show_genres = '';
     let service = '';
-
+    document.getElementById('star').src = "";
+    document.getElementById('star').hidden = true;
     const tvId = showDetailsArray[cardNumber]['id'];
     show_name = showDetailsArray[cardNumber]['name'];
     show_desc = showDetailsArray[cardNumber]['overview'];
@@ -143,9 +144,8 @@ function displayTVShowData() {
         console.log(show_name + '/' + tvId + '    ' + response.favorite);
         if (response.favorite) {
             document.getElementById('star').src = "images/star.png";
-        } else {
-            document.getElementById('star').src = "";
-        }
+            document.getElementById('star').hidden = false;
+        } 
     })
     .catch((err) => console.error(err));
 
