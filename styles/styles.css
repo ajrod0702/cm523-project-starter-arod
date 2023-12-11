@@ -566,4 +566,10 @@ img {
     width: 260px;
     height: 1080px;
   }
+
+  #star {
+    width: 35px;
+    top: -20px;
+    left: -23px;
+  }
 }
