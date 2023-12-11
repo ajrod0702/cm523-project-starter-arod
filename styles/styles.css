@@ -316,6 +316,7 @@ img {
   border-radius: 6px;
   width: 160px;
   margin-left: 50px;
+  color: #231F20;
 }
 
 .starred-button button:hover {
@@ -366,6 +367,7 @@ img {
   border-radius: 6px;
   width: 225px;
   margin-top: 40px;
+  color: #231F20;
 }
 
 .download-button button:hover {
@@ -381,6 +383,7 @@ img {
   width: 225px;
   margin-top: 40px;
   margin-bottom: 40px;
+  color: #231F20;
 }
 
 .restart-button button:hover {
